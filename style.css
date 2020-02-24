@@ -1,0 +1,51 @@
+html, body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    border: 1px black solid;
+    height: 100%;
+}
+article{
+    width: 100%;
+    height: 50vh;
+    border: 1px red dashed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form, table, td, th, tr{
+    border: 1px black solid;
+    padding: 10px;
+    text-align: center;
+}
+
+table tr td h2{
+    color: red;
+    width: 100%;
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}
+
+@media screen and (max-width: 640px){
+    section{
+        grid-template-columns : 1fr;
+    }
+}

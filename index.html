@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+
+        <article>
+            <form>
+                <h2>Budget</h2>
+                <p>
+                    <input type="text" id="budgetInput" placeholder="Entrez un budget">
+                </p>
+                <p>
+                    <button type="button" id="budgetValid">Valider</button>
+                </p>
+            </form>
+        </article>
+
+        <article>
+            <form>
+                <h2>Dépenses</h2>
+                <p>
+                    <input type="text" id="depenseTitle" placeholder="Entrez un libellé">
+                </p>
+                 <p>
+                    <input type="text" id="depenseInput" placeholder="Entrez une dépense">
+                </p>
+                <p>
+                    <button type="button" id="depenseValid">Valider</button>
+                </p>
+            </form>
+        </article>
+
+        <article>
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <h2>Sommes</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Budget</div>
+                    </td>
+                    <td>
+                        <div>Dépenses</div>
+                    </td>
+                    <td>
+                        <div>Balance</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="budget">0</td>
+                    <td id="depense">0</td>
+                    <td id="balance">0</td>
+                </tr>
+               
+            </table>
+        
+        </article>
+
+        <article>
+            <table id="list">
+                <tr>
+                    <td colspan="4">
+                        <h2>Liste dépenses</h2>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nom</td>
+                    <td>Somme</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+               
+            </table>
+           
+        </article>
+
+    </section>
+
+    <noscript>L'activation de Javascript est requis pour faire fonctionner cette application</noscript>
+    <script src="app.js"></script>
+</body>
+</html>
